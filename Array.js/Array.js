@@ -1,20 +1,21 @@
-class Array{
+class Array {
   array;
   length;
 
-  constructor(...data){
+  constructor(...data) {
     this.length = data.length;
     this.array = data;
   }
-}
 
- push(number) {
+  push(number) {
     return [...this.array, number];
   }
-map(functionName) {
+
+  map(functionName) {
     for (let number = 0; number < this.array.length; number++) {
       return functionName(this.array[number]);
     }
   }
+}
 
-
+export default Array;
