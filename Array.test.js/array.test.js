@@ -2,7 +2,7 @@ import numbers from "../index.js";
 
 describe("Given the array numbers [3, 8, 10, 2]  ", () => {
   describe("When used property length", () => {
-    test("Then it shoyuld return 4", () => {
+    test("Then it should return 4", () => {
       const expectedResult = 4;
 
       const numberLength = numbers.length;
