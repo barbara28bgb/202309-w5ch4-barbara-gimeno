@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm testbranch="$(git symbolic-ref --short -q HEAD)"
+branch="$(git symbolic-ref --short -q HEAD)"
 
 if [ "$branch" = "master" ] || [ "$branch" = "main" ]; then
   echo "You can't commit directly to main branch"
