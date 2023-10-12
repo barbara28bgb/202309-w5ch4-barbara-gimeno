@@ -16,6 +16,14 @@ class Array {
       return functionName(this.array[number]);
     }
   }
+
+  filter(functionName) {
+    for (let number = 0; number < this.array.length; number++) {
+      if (functionName(this.array[number])) {
+        console.log(this.array[number]);
+      }
+    }
+  }
 }
 
 export default Array;
