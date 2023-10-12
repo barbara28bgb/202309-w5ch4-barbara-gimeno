@@ -16,7 +16,6 @@ describe("Given the array numbers ", () => {
       const pushResult = [3, 8, 10, 2, 6];
 
       const numbersPush = numbers.push(6);
-      // Console.log(numbersPush);
 
       expect(numbersPush).toStrictEqual(pushResult);
     });
