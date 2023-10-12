@@ -7,3 +7,6 @@ class Array{
     this.array = data;
   }
 }
+
+
+
