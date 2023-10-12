@@ -10,4 +10,15 @@ describe("Given the array numbers ", () => {
       expect(numberLength).toBe(expectedResult);
     });
   });
+
+  describe("When it use method push and receive 6", () => {
+    test("Then it should return [3, 8, 10, 2, 6]", () => {
+      const pushResult = [3, 8, 10, 2, 6];
+
+      const numbersPush = numbers.push(6);
+      // Console.log(numbersPush);
+
+      expect(numbersPush).toStrictEqual(pushResult);
+    });
+  });
 });
