@@ -1,4 +1,4 @@
-class Array {
+class CodersArray {
   array;
   length;
 
@@ -8,28 +8,34 @@ class Array {
   }
 
   push(number) {
-    return [...this.array, number];
+    this.array[this.array.length] = number;
+    this.length = this.array.length;
+
+    return this.length;
   }
 
   map(functionName) {
-    let mappedArray = [];
-    for (let number = 0; number < this.array.length; number++) {
-      mappedArray = [...mappedArray, functionName(this.array[number])];
+    const mappedArray = new CodersArray();
+
+    for (let position = 0; position < this.array.length; position++) {
+      const modifiedNumber = functionName(this.array[position]);
+
+      mappedArray.push(modifiedNumber);
     }
 
-    return mappedArray;
+    return mappedArray.array;
   }
 
   filter(functionName) {
-    let filteredArray = [];
+    const filteredArray = new CodersArray();
 
     for (let number = 0; number < this.array.length; number++) {
       if (functionName(this.array[number])) {
-        filteredArray = [...filteredArray, this.array[number]];
+        filteredArray.push(this.array[number]);
       }
     }
 
-    return filteredArray;
+    return filteredArray.array;
   }
 
   find(functionName) {
@@ -53,4 +59,4 @@ class Array {
   }
 }
 
-export default Array;
+export default CodersArray;
