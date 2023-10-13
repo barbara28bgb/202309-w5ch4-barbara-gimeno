@@ -1,4 +1,26 @@
 import numbers from "../index.js";
+import CodersArray from "../Array.js/Array.js";
+import CodersArray from "../Array.js/Array.js";
+
+describe("Given the class CodersArray's constructor", () => {
+  describe("When it's called with 2 and 4 ", () => {
+    test("Then it should retourn and object with two propiertiespointing to 2 and 4", () => {
+      const valueA = 2;
+      const valueB = 4;
+
+      const values = new CodersArray(valueA, valueB);
+
+      expect(values[0]).toBe(valueA);
+      expect(values[1]).toBe(valueB);
+    });
+    test("Then it should have the lemgth of 2", () => {});
+    const expectedLenght = 2;
+
+    const values = new CodersArray(2, 4);
+
+    expect(values.length).toBe(expectedLEnght);
+  });
+});
 
 describe("Given the array numbers [3, 8, 10, 2]  ", () => {
   describe("When used property length", () => {
