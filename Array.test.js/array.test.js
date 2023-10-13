@@ -1,6 +1,5 @@
 import numbers from "../index.js";
 import CodersArray from "../Array.js/Array.js";
-import CodersArray from "../Array.js/Array.js";
 
 describe("Given the class CodersArray's constructor", () => {
   describe("When it's called with 2 and 4 ", () => {
