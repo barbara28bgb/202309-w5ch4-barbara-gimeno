@@ -1,16 +1,26 @@
 class CodersArray {
-  array;
   length;
 
   constructor(...data) {
-    this.length = data.length;
-    this.array = data;
+    let counter = 0;
+
+    for (const array of data) {
+      this[array] = array;
+      counter++;
+    }
+
+    this.length = counter;
   }
 
-  push(number) {
-    this.array[this.array.length] = number;
-    this.length = this.array.length;
+  push(...elements) {
+    let counter = this.length;
 
+    for (const element of elements) {
+      this[counter] = element;
+      counter++;
+    }
+
+    this.length = counter;
     return this.length;
   }
 
