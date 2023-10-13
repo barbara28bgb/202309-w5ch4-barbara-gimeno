@@ -3,12 +3,12 @@ import CodersArray from "./Array.js/Array.js";
 const numbers = new CodersArray(3, 8, 10, 2);
 // Const names = new Array("Marta", "Luis", "Pere");
 
-// Console.log("Numbers length: ", numbers.length);
-// console.log("Names length: ", names.length);
+console.log("Numbers length: ", numbers.length);
+// Console.log("Names length: ", names.length);
 
-// console.log("Numbers push (6): ", numbers.push(6));
+console.log("Numbers push (6, 7, 4): ", numbers.push(6, 7, 4));
 
-// console.log(
+// Console.log(
 //   "Numbers map (number) => number + 1): ",
 //   numbers.map((number) => number + 1),
 // );
